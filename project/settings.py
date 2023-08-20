@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #myapps
     'question',
+    "taggit",
 ]
 
 MIDDLEWARE = [
