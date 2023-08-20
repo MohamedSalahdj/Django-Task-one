@@ -4,3 +4,4 @@ from taggit.managers import TaggableManager
 from django.utils import timezone
 
 # Create your models here.
+
