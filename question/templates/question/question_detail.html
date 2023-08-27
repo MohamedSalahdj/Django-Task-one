@@ -6,7 +6,7 @@
     <p>{{question.content}}</p>
 </div>
 <hr>
-<h1>Answers</h1>
+<h1><i style="color: dodgerblue;">({{question.question_answer.all|length}})</i> Answers</h1>
 {% for answer in answers %}
 <div>
     <p style="color: #000; font-weight: bold;"> {{answer.answer}} <i style="color: red;">- {{answer.author}}</i></p>
