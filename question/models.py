@@ -12,6 +12,9 @@ class Question(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_question')
     tag = TaggableManager()
 
+    def __str__(self):
+        return self.question
+
 
 class Answer(models.Model):
     answer = models.TextField(max_length= 3500)

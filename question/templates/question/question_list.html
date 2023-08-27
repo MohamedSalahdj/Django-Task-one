@@ -1,0 +1,10 @@
+
+
+{% for question in question_list %}
+    <div>
+        <ul>
+            <li>- {{question.author}} | <a href="#">{{question}}</a> | {{question.created_at}}</li>
+        </ul>
+        
+    </div>
+{% endfor %}
