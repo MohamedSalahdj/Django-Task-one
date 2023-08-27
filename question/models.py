@@ -17,7 +17,7 @@ class Question(models.Model):
 
 
 class Answer(models.Model):
-    answer = models.TextField(max_length= 3500)
+    answer = models.TextField(max_length=3500)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author_answer')
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name='question_answer')
     created_at = models.DateTimeField(default=timezone.now)

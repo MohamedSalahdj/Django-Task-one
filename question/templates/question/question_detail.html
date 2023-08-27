@@ -1,0 +1,15 @@
+
+<h1>Question</h1>
+<div>
+   <p style="color: blue; font-weight: bold;"> {{question}} <i style="color: red;">- {{question.author}}</i></p>
+    <p>- {{question.created_at}}</p>
+    <p>{{question.content}}</p>
+</div>
+<hr>
+<h1>Answers</h1>
+{% for answer in answers %}
+<div>
+    <p style="color: #000; font-weight: bold;"> {{answer.answer}} <i style="color: red;">- {{answer.author}}</i></p>
+     <p>- {{answer.created_at}}</p>
+ </div>
+{% endfor %}

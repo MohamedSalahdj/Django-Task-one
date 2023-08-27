@@ -3,7 +3,7 @@
 {% for question in question_list %}
     <div>
         <ul>
-            <li>- {{question.author}} | <a href="#">{{question}}</a> | {{question.created_at}}</li>
+            <li>- {{question.author}} | <a href="question/{{question.id}}">{{question}}</a> | {{question.created_at}}</li>
         </ul>
         
     </div>
