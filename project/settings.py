@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #myapps
     'question',
     "taggit",
+    "django_bootstrap5",
 ]
 
 MIDDLEWARE = [
